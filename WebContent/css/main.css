@@ -1,0 +1,45 @@
+body {	
+	top: 5px;
+    padding: 65px;  
+    background-color: #383838; 
+    color:white; 
+    margin-right: auto ;
+    
+}
+
+
+.editForm{
+   margin-left: 20% ;	
+}
+
+
+.contacts-header{
+    margin-left: 30% ;
+}
+
+
+.card {
+	margin-left: 50% ;
+    border: 1px black;
+    box-shadow: 0 0 5px #202020;
+    border-radius:10px;
+    height:200px;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    
+}
+
+.cardHeader {
+    background-color: #dfe3ee;
+    font-size:11pt;
+    color:black;
+    padding:5px;
+}
+
+
+.cardBody {
+	font-size:10pt;
+    padding-left: 5px;
+    color:black;
+}

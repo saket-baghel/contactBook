@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<title>MyContact Book</title>
+	</head>
+	<body>
+		<div class="container">
+			<div id="contacts-panel" ng-controller="ContactCtrl">
+			  <div class="contacts-header">	 
+				<a class="btn btn-primary btn-large" ng-href="#/edit/">Add New Contact</a> 
+				&nbsp;&nbsp;&nbsp;<span>{{contacts.length}} contacts found</span>
+			  </div><br/>	
+				
+				<div ng-view></div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/deleteSound.js"></script>
+		<script type="text/javascript" src="js/controllers.js"></script>
+
+		
+	</body>
+</html>

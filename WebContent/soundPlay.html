@@ -1,0 +1,15 @@
+<html>
+<body>
+<button class="play">Play</button>
+<script src="js/jquery.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.play').click(function() {
+		var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'deleteSound.mp3');
+        audioElement.setAttribute('autoplay', 'autoplay');
+        });
+    });
+</script> 
+</body>
+</html>

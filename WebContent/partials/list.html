@@ -1,0 +1,18 @@
+
+<ul class="unstyled">
+    <li class="span6" ng-repeat="contact in contacts">
+
+<div class="card">
+ <div class="cardHeader">
+  <a ng-href="#/edit/{{$index}}" class="btn btn-warning">Edit</a> 
+  <button class="btn btn-warning deleteButton" ng-click="deleteContact($index)">Delete</button>
+  <h3>{{contact.name}}</h3>
+ </div>
+ <div class="cardBody">
+  <p>Group : {{contact.group}}</p>
+  <p>Mobile : {{contact.mobile}}</p>
+  <p>Address : {{contact.address}}</p>
+ </div>
+</div>    
+    </li>
+</ul>

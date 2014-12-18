@@ -1,0 +1,42 @@
+
+
+
+<form name="editForm" class="form-horizontal editForm" ng-submit="saveContact()">
+
+  
+    <div class="control-group" ng-class="{error: editForm.name.$invalid}">
+        <label class="control-label">Name :</label>
+        <div class="controls">
+            <input type="text" name="name" ng-model="contact.name" required>
+            <p class="help-inline" ng-show="editForm.name.$error.required">Required</p>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Group:</label>
+        <div class="controls">
+            <select ng-model="contact.group" name="group">
+                <option value="Friend">Friend</option>
+                <option value="Family">Family</option>
+                <option value="Office">Office</option>
+            </select>
+        </div>
+    </div>
+    <div class="control-group" ng-class="{error: editForm.mobile.$invalid}">
+        <label class="control-label">Mobile: </label>
+        <div class="controls">
+            <input type="text" name="mobile" ng-model="contact.mobile" ng-maxlength="10" ng-pattern="/^[0-9]+$/">
+            <p class="help-inline" ng-show="editForm.mobile.$error.maxlength">Max length reached</p>
+            <p class="help-inline" ng-show="editForm.mobile.$error.pattern">incorrect mobile number</p>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Address: </label>
+        <div class="controls">
+            <input type="text" name="address" ng-model="contact.address">
+        </div>
+    </div>
+    <div class="form-actions">
+        &nbsp;&nbsp;&nbsp;
+        <input class="btn btn-success" ng-click="saveContact()" ng-disabled="editForm.$invalid" value="Save Changes"/>
+    </div>
+</form>
